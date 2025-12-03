@@ -5,6 +5,8 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config(); // Carrega variáveis de ambiente (segurança)
 
+// Importa rotas
+const routes = require('./routes');
 // 2. Criar o App
 const app = express();
 
@@ -12,14 +14,12 @@ const app = express();
 app.use(cors()); // Libera acesso externo
 app.use(express.json()); // Permite que o servidor entenda JSON (dados estruturados)
 
-// 4. Rotas (Os "pedidos" que o garçom aceita)
-// Rota de Teste (Health Check)
-app.get('/', (request, response) => {
-    return response.status(200).json({
-        message: "LiveWhisper API está online! 🚀",
-        version: "1.0.0"
-    });
-});
+// Rota padrão (Healh Check)
+app.get('/', (req,res) => res.json({ status: "Livewhispeer API Online"}));
+
+// Usa as rotas ofociais com prefixo '/api
+app.use('/api', routes);
+
 
 // 5. Iniciar o Servidor
 // Tenta pegar a porta do sistema, ou usa a 3000 por padrão
