@@ -1,0 +1,48 @@
+.section {
+    padding-top: 160px;
+    /* Espaço para a navbar */
+    padding-bottom: 80px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 10%, rgba(139, 92, 246, 0.15), transparent 60%);
+}
+
+.headline {
+    font-size: 4.5rem;
+    /* Fonte Gigante */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+}
+
+.subheadline {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    font-weight: 300;
+}
+
+/* Botão com brilho */
+.glowButton {
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s;
+}
+
+.glowButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 3rem;
+    }
+}

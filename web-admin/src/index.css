@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+:root {
+    --bg-black: #000000;
+    /* Preto Absoluto */
+    --bg-glass: rgba(255, 255, 255, 0.05);
+    /* Vidro translúcido */
+    --primary: #8b5cf6;
+    /* Roxo Perssua */
+    --accent: #ffffff;
+    /* Branco Puro */
+    --text-gray: #9ca3af;
+    /* Cinza Suave */
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--accent);
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    /* Evita rolagem lateral indesejada */
+}
+
+/* Scrollbar Bonita */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+/* Utilitário para texto gradiente */
+.text-gradient {
+    background: linear-gradient(90deg, #fff 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

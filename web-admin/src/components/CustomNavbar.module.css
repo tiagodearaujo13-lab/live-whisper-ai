@@ -1,0 +1,26 @@
+.glassNav {
+    background: rgba(0, 0, 0, 0.6);
+    /* Preto transparente */
+    backdrop-filter: blur(12px);
+    /* O desfoque do vidro */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 1.5rem;
+}
+
+.navLink {
+    color: var(--text-gray) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: white !important;
+}
