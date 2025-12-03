@@ -1,0 +1,10 @@
+# Dependências do Node 
+dist/
+build/
+
+# Logs e arquivos de sistema
+.DS_Store
+*.log
+
+# Variáveis de ambiente (Segurança: contém senhas)
+.env

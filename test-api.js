@@ -8,12 +8,14 @@ async function testarAPI() {
         prompt: "O cliente disse que o produto é caro."
     };
 
+    const API_KEY = "INSIRA-SUA-CHAVE-AQUI"; // <--- Coloque sua chave aqui para testar
+
     try {
-        // Faz a requisição para o NOSSO servidor local
         const response = await fetch("http://localhost:3000/api/suggestion", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "x-api-key": API_KEY // <--- Enviando a chave no cabeçalho
             },
             body: JSON.stringify(dados)
         });
