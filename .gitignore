@@ -1,10 +1,7 @@
-# Dependências do Node 
-dist/
-build/
-
-# Logs e arquivos de sistema
-.DS_Store
+node_modules/
+backend/uploads/
+backend/__pycache__/
 *.log
-
-# Variáveis de ambiente (Segurança: contém senhas)
 .env
+android/app/build/
+android/.gradle/
