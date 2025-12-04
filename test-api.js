@@ -8,7 +8,7 @@ async function testarAPI() {
         prompt: "O cliente disse que o produto é caro."
     };
 
-    const API_KEY = "INSIRA-SUA-CHAVE-AQUI"; // <--- Coloque sua chave aqui para testar
+    const API_KEY = "SUA-CHAVE-API-AQUI"; // <--- Coloque sua chave aqui para testar
 
     try {
         const response = await fetch("http://localhost:3000/api/suggestion", {

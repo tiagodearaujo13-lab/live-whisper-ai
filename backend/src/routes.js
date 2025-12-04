@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-// Importa nosso controlador
+// Importa controlador
 const aiController = require('./controllers/aiController');
 
 // Define a rota POST (porque estamos ENVIANDO dados)
